@@ -19,11 +19,6 @@
         public void AddSportler(Sportler sportler) {
             teilnehmer.Add(sportler);
         }
-        public void PrintSportler() {
-            foreach (Sportler item in teilnehmer) {
-                Console.WriteLine(item.GetName());
-            }
-        }
         public void Ausgabe() {
             Console.WriteLine($"Ergebnis-Liste Disziplin: " + disziplin.GetName() + "/" + this.GetName());
             foreach (Ergebnis item in ergebnisse) {
