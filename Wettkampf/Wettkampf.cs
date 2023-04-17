@@ -4,7 +4,6 @@
         Disziplin disziplin;
         List<Sportler> teilnehmer = new List<Sportler>();
         List<Ergebnis> ergebnisse = new List<Ergebnis>();
-
         public void SetName(String name) {
             this.name = name;
         }
@@ -38,7 +37,7 @@
             foreach (Sportler item in teilnehmer) {
                 Random random = new Random();
                 float wert = (float)random.NextDouble() * 10;
-                Ergebnis ergebnis = new Ergebnis(item , wert);
+                Ergebnis ergebnis = new Ergebnis(item, wert);
                 ergebnisse.Add(ergebnis);
             }
         }
