@@ -36,10 +36,8 @@
         }
         public void WettkampfDurchführen() {
             foreach (Sportler item in teilnehmer) {
-                Random random = new Random();
-                double mantissa = (random.NextDouble() * 2.0) - 1.0;
-                double exponent = Math.Pow(2.0, random.Next(-126, 128));
-                float wert = (float)(mantissa * exponent);
+                Random random = new Random();            
+                float wert = (float)random.NextDouble();
                 Ergebnis ergebnis = new Ergebnis(item , wert);
                 ergebnisse.Add(ergebnis);
             }

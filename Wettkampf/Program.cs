@@ -32,15 +32,9 @@
             Ergebnis el2 = new Ergebnis(s2, 0.9f);
             Ergebnis el3 = new Ergebnis(s3, 0.99f);
 
-            zwischenlauf.AddErgebnis(zl1);
-            zwischenlauf.AddErgebnis(zl2);
-            zwischenlauf.AddErgebnis(zl3);
-            vorlauf.AddErgebnis(vl1);
-            vorlauf.AddErgebnis(vl2);
-            vorlauf.AddErgebnis(vl3);
-            endlauf.AddErgebnis(el1);
-            endlauf.AddErgebnis(el2);
-            endlauf.AddErgebnis(el3);
+            zwischenlauf.WettkampfDurchführen();
+            vorlauf.WettkampfDurchführen();
+            endlauf.WettkampfDurchführen();
 
             vorlauf.Ausgabe();
             zwischenlauf.Ausgabe();
