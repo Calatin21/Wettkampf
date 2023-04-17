@@ -36,8 +36,8 @@
         }
         public void WettkampfDurchführen() {
             foreach (Sportler item in teilnehmer) {
-                Random random = new Random();            
-                float wert = (float)random.NextDouble();
+                Random random = new Random();
+                float wert = (float)random.NextDouble() * 10;
                 Ergebnis ergebnis = new Ergebnis(item , wert);
                 ergebnisse.Add(ergebnis);
             }
