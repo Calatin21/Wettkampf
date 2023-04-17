@@ -24,9 +24,6 @@
                 Console.WriteLine(item.GetName());
             }
         }
-        //public void AddErgebnis(Ergebnis ergebnis) {
-        //    ergebnisse.Add(ergebnis);
-        //}
         public void Ausgabe() {
             Console.WriteLine($"Ergebnis-Liste Disziplin: " + disziplin.GetName() + "/" + this.GetName());
             foreach (Ergebnis item in ergebnisse) {
