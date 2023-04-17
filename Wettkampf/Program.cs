@@ -22,16 +22,6 @@
             endlauf.AddSportler(s3);
             endlauf.SetDisziplin(m100);
 
-            Ergebnis vl1 = new Ergebnis(s1, 1.0f);
-            Ergebnis vl2 = new Ergebnis(s2, 2.0f);
-            Ergebnis vl3 = new Ergebnis(s3, 3.0f);
-            Ergebnis zl1 = new Ergebnis(s1, 0.9f);
-            Ergebnis zl2 = new Ergebnis(s2, 1.5f);
-            Ergebnis zl3 = new Ergebnis(s3, 1.7f);
-            Ergebnis el1 = new Ergebnis(s1, 0.7f);
-            Ergebnis el2 = new Ergebnis(s2, 0.9f);
-            Ergebnis el3 = new Ergebnis(s3, 0.99f);
-
             zwischenlauf.WettkampfDurchführen();
             vorlauf.WettkampfDurchführen();
             endlauf.WettkampfDurchführen();

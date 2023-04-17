@@ -24,14 +24,15 @@
                 Console.WriteLine(item.GetName());
             }
         }
-        public void AddErgebnis(Ergebnis ergebnis) {
-            ergebnisse.Add(ergebnis);
-        }
+        //public void AddErgebnis(Ergebnis ergebnis) {
+        //    ergebnisse.Add(ergebnis);
+        //}
         public void Ausgabe() {
             Console.WriteLine($"Ergebnis-Liste Disziplin: " + disziplin.GetName() + "/" + this.GetName());
             foreach (Ergebnis item in ergebnisse) {
                 Console.WriteLine(item.GetSportler().GetName() + " " + item.GetWert());
             }
+            Console.WriteLine("");
         }
         public void WettkampfDurchführen() {
             foreach (Sportler item in teilnehmer) {
